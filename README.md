@@ -16,21 +16,21 @@ This project provides a **Flask API** that serves climate analysis data from an 
 
 ## API Endpoints
 
-### **1. Homepage (`/`)
+### 1. Homepage (`/`)
 Lists all available API routes.
 
-### **2. Precipitation Data (`/api/v1.0/precipitation`)
+### 2. Precipitation Data (`/api/v1.0/precipitation`)
 - Converts the **last 12 months of precipitation data** into a dictionary `{date: precipitation}`.
 - Returns the JSON representation of the dataset.
 
-### **3. Stations (`/api/v1.0/stations`)
+### 3. Stations (`/api/v1.0/stations`)
 - Returns a **JSON list of stations** from the dataset.
 
-### **4. Temperature Observations (`/api/v1.0/tobs`)
+### 4. Temperature Observations (`/api/v1.0/tobs`)
 - Queries **temperature observations** for the most active station over the last 12 months.
 - Returns a JSON list of `{date, temperature}`.
 
-### **5. Temperature Summary (`/api/v1.0/<start>` & `/api/v1.0/<start>/<end>`)
+### 5. Temperature Summary (`/api/v1.0/<start>` & `/api/v1.0/<start>/<end>`)
 - For a given **start date**, calculates **TMIN, TAVG, and TMAX** for all dates **greater than or equal** to the start.
 - For a given **start and end date**, calculates **TMIN, TAVG, and TMAX** between those dates (inclusive).
 
